@@ -9,13 +9,13 @@ export class AuthController {
     // so its going to be accessed as localhost:3333/auth/signup
     @Post("signup")
     signup() {
-        return "I am signed up"
+        return this.authService.signup()
     }
 
     // define that login is post request and its specific route is login, 
     // so its going to be accessed as localhost:3333/auth/login
     @Post("login")
     login() {
-        return "I am login"
+        return this.authService.login()
     }
 }
